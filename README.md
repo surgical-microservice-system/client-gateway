@@ -20,8 +20,17 @@ Este módulo es un API REST desarrollado con NestJS para la gestión de agendas,
 ## Estado
 Proyecto en **fase de desarrollo** - Funcionalidades core implementadas. Mejoras y optimizaciones en progreso.
 
+
+## Arquitectura del Sistema
+Este repositorio es una pieza de un ecosistema distribuido más grande. Para mantener la escalabilidad, el sistema se divide en múltiples microservicios orquestados.
+
+Puedes explorar el ecosistema completo, incluyendo servicios de backend, bases de datos y configuraciones de infraestructura, en nuestra organización:
+**[Repositorios de Surgical Microservice System](https://github.com/orgs/surgical-microservice-system/repositories)**
+
+
 ## Descripción
 Este gateway centraliza y orquesta las operaciones de los distintos microservicios hospitalarios, facilitando la integración y el acceso seguro a los recursos.
+
 
 ## Diagrama de clases simplificado
 ![Diagrama de clases](assets/diagrama.png)
