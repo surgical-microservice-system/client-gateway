@@ -64,6 +64,26 @@ src/
   servicios/      # Gestión de servicios hospitalarios
 ```
 
+## Endpoints Principales
+Cada módulo expone endpoints RESTfull. Ejemplo:
+
+- **Agenda:** `/agenda`
+  - GET `/agenda` - Listar turnos con filtrado por estado
+  - POST `/agenda` - Crear turno con validación de disponibilidad
+  - PATCH `/agenda/:id` - Actualizar turno
+  - DELETE `/agenda/:id` - Eliminar turno
+
+- **Pacientes:** `/pacientes`
+  - GET `/pacientes` - Listar pacientes
+  - POST `/pacientes` - Crear paciente
+
+- **Cirugías:** `/cirugias`
+  - GET `/cirugias` - Listar cirugías
+  - POST `/cirugias` - Crear cirugía
+
+...y así para los demás módulos.
+
+
 ## Instalación
 
 1. Clonar el repositorio:
@@ -92,24 +112,6 @@ npm run start:dev
    Esto levanta el servidor Keycloak en `http://localhost:8080`
    - Credenciales: admin / admin
 
-## Endpoints Principales
-Cada módulo expone endpoints RESTfull. Ejemplo:
-
-- **Agenda:** `/agenda`
-  - GET `/agenda` - Listar turnos con filtrado por estado
-  - POST `/agenda` - Crear turno con validación de disponibilidad
-  - PATCH `/agenda/:id` - Actualizar turno
-  - DELETE `/agenda/:id` - Eliminar turno
-
-- **Pacientes:** `/pacientes`
-  - GET `/pacientes` - Listar pacientes
-  - POST `/pacientes` - Crear paciente
-
-- **Cirugías:** `/cirugias`
-  - GET `/cirugias` - Listar cirugías
-  - POST `/cirugias` - Crear cirugía
-
-...y así para los demás módulos.
 
 ## Configuración
 Variables de entorno principales (ver `src/config/envs.ts`):
