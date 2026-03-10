@@ -1,35 +1,27 @@
 ## Client Gateway – Plataforma de Gestión Quirúrgica
 
-Este módulo es un API REST desarrollado con NestJS para la gestión de agendas, cirugías, pacientes, personal, quirófanos y servicios en el contexto hospitalario (Solamente del area de quirófanos).
+Este repositorio es una pieza de un ecosistema distribuido más grande. Para garantizar la **escalabilidad** y el **aislamiento de responsabilidades**, el sistema se divide en múltiples microservicios orquestados.
 
-### Tabla de Contenidos
-- [Estado](#Estado)
-- [Descripción](#descripción)
-- [Tech Stack del proyecto](#Tech-Stack-del-proyecto)
-- [Estructura del Proyecto](#estructura-del-proyecto)
-- [Instalación](#instalación)
-- [Ejecución](#ejecución)
-- [Endpoints Principales](#endpoints-principales)
-- [Configuración](#configuración)
+Puedes explorar el ecosistema completo, incluyendo servicios de backend, modelos de bases de datos y configuraciones de infraestructura, en nuestra organización de GitHub:
 
+👉 **[Explorar Repositorios de Surgical Microservice System](https://github.com/orgs/surgical-microservice-system/repositories)**
 
 ---
-
-# Documentación 
 
 ## Estado
 Proyecto en **fase de desarrollo** - Funcionalidades core implementadas. Mejoras y optimizaciones en progreso.
 
 
-## Arquitectura del Sistema
-Este repositorio es una pieza de un ecosistema distribuido más grande. Para mantener la escalabilidad, el sistema se divide en múltiples microservicios orquestados.
+## Descripción del Módulo
 
-Puedes explorar el ecosistema completo, incluyendo servicios de backend, bases de datos y configuraciones de infraestructura, en nuestra organización:
-**[Repositorios de Surgical Microservice System](https://github.com/orgs/surgical-microservice-system/repositories)**
+Este módulo es un **API REST centralizado** desarrollado con **NestJS v11**. Su función principal es actuar como **Gateway y Orquestador** para la gestión integral del área de quirófanos:
 
+* **Agendas y Turnos:** Coordinación de horarios y disponibilidad.
+* **Quirófanos y Servicios:** Gestión de recursos físicos y especialidades.
+* **Pacientes y Personal:** Administración de datos de pacientes y equipos médicos.
+* **Procedimientos Quirúrgicos:** Seguimiento y registro de cirugías.
 
-## Descripción
-Este gateway centraliza y orquesta las operaciones de los distintos microservicios hospitalarios, facilitando la integración y el acceso seguro a los recursos.
+El Gateway facilita la integración y el acceso seguro a los recursos, abstrayendo la complejidad de la red de microservicios interna para ofrecer una interfaz unificada.
 
 
 ## Diagrama de clases simplificado
