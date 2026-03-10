@@ -1,5 +1,3 @@
-
-
 ## Client Gateway – Plataforma de Gestión Quirúrgica
 
 Este módulo es un API REST desarrollado con NestJS para la gestión de agendas, cirugías, pacientes, personal, quirófanos y servicios en el contexto hospitalario (Solamente del area de quirófanos).
